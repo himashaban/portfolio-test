@@ -1,0 +1,704 @@
+/* body */
+body {
+
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* end of the body */
+/* start navbar */
+
+
+.navbar-nav .nav-item a {
+    color: white;
+
+}
+
+.navbar-nav .nav-item {
+    position: relative;
+    transition: all 1.5s;
+    overflow: hidden;
+    text-align: center;
+
+
+}
+
+.nav-item::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    position: absolute;
+    left: -1;
+    bottom: 5px;
+    opacity: 0;
+    transform-origin: right;
+    transition: transform.14s;
+    transform: scale(0);
+}
+
+.nav-item:active::after {
+    opacity: 1;
+    left: 0;
+    transform-origin: left;
+    transform: scale(1);
+
+}
+
+
+
+/* end navbar */
+/* home */
+
+.first {
+
+    background-color: rgba(48, 47, 47, 0.5);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/imgs/bg.jpg);
+    background-position: center;
+
+    background-size: cover;
+    position: relative;
+
+}
+
+
+
+
+
+#home .bio {
+    h2 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: bolder;
+        font-size: 50px;
+    }
+}
+
+#home h2,
+h3,
+i {
+    font-family: "Montserrat", sans-serif;
+}
+
+#home h2 {
+    font-weight: 200;
+}
+
+.first #home h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bolder;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.icons .spacing i {
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/*  second method of using typing effect using animation  */
+/* .first #home h3::after{
+content: '|';
+position: absolute;
+animation-name: Typing;
+animation-duration: 14s;
+animation-iteration-count: infinite;
+} */
+/* @keyframes Typing {
+    0% {
+        content: 'S|';
+    }
+
+    1% {
+        content: 'Si|';
+    }
+
+    2% {
+        content: 'Sim|';
+    }
+
+    3% {
+        content: 'Simo|';
+    }
+
+    4% {
+        content: 'Simon|';
+    }
+
+    5% {
+        content: 'Simone|';
+    }
+
+    6% {
+        content: 'Simone O|';
+    }
+
+    7% {
+        content: 'Simone Ol|';
+    }
+
+    8% {
+        content: 'Simone Oli|';
+    }
+
+    9% {
+        content: 'Simone Oliv|';
+    }
+
+    10% {
+        content: 'Simone Olivi|';
+    }
+
+    11% {
+        content: 'Simone Olivia|';
+    }
+
+    12% {
+        content: 'Simone Olivi|';
+    }
+
+    13% {
+        content: 'Simone Oliv|';
+    }
+
+    14% {
+        content: 'Simone Oli|';
+    }
+
+    15% {
+        content: 'Simone Ol|';
+    }
+
+    16% {
+        content: 'Simone O|';
+    }
+
+    17% {
+        content: 'Simone|';
+    }
+
+    18% {
+        content: 'Simon|';
+    }
+
+    19% {
+        content: 'Simo|';
+    }
+
+    20% {
+        content: 'Sim|';
+    }
+
+    21% {
+        content: 'Si|';
+    }
+
+    22% {
+        content: 'S|';
+    }
+
+    23% {
+        content: 'F|';
+    }
+
+    24% {
+        content: 'Fr|';
+    }
+
+    25% {
+        content: 'Fre|';
+    }
+
+    26% {
+        content: 'Free|';
+    }
+
+    27% {
+        content: 'Freel|';
+    }
+
+    28% {
+        content: 'Freela|';
+    }
+
+    29% {
+        content: 'Freelan|';
+    }
+
+    30% {
+        content: 'Freelanc|';
+    }
+
+    31% {
+        content: 'Freelance|';
+    }
+
+    32% {
+        content: 'Freelancer|';
+    }
+
+    33% {
+        content: 'Freelance|';
+    }
+
+    34% {
+        content: 'Freelanc|';
+    }
+
+    35% {
+        content: 'Freelan|';
+    }
+
+    36% {
+        content: 'Freela|';
+    }
+
+    37% {
+        content: 'Freel|';
+    }
+
+    38% {
+        content: 'Free|';
+    }
+
+    39% {
+        content: 'Fre|';
+    }
+
+    40% {
+        content: 'Fr|';
+    }
+
+    41% {
+        content: 'F|';
+    }
+
+    42% {
+        content: 'P|';
+    }
+
+    43% {
+        content: 'Po|';
+    }
+
+    44% {
+        content: 'Pho|';
+    }
+
+    45% {
+        content: 'Phot|';
+    }
+
+    46% {
+        content: 'Photo|';
+    }
+
+    47% {
+        content: 'Photog|';
+    }
+
+    48% {
+        content: 'Photogh|';
+    }
+
+    49% {
+        content: 'Photoghr|';
+    }
+
+    50% {
+        content: 'Photoghra|';
+    }
+
+    51% {
+        content: 'Photoghrap|';
+    }
+
+    52% {
+        content: 'Photoghrape|';
+    }
+
+    53% {
+        content: 'Photoghraper|';
+    }
+
+    54% {
+        content: 'Photoghrape|';
+    }
+
+    60% {
+        content: 'Photoghrap|';
+    }
+
+    62% {
+        content: 'Photoghra|';
+    }
+
+    64% {
+        content: 'Photoghr|';
+    }
+
+    66% {
+        content: 'Photogh|';
+    }
+
+    68% {
+        content: 'Photog|';
+    }
+
+    70% {
+        content: 'Photo|';
+    }
+
+    72% {
+        content: 'Phot|';
+    }
+
+    74% {
+        content: 'Pho|';
+    }
+
+    76% {
+        content: 'Ph|';
+    }
+
+    78% {
+        content: 'P|';
+    }
+
+    80% {
+        content: 'D|';
+    }
+
+    84% {
+        content: 'De|';
+    }
+
+    86% {
+        content: 'Des|';
+    }
+
+    88% {
+        content: 'Desi|';
+    }
+
+    90% {
+        content: 'Desig|';
+    }
+
+    91% {
+        content: 'Design|';
+    }
+
+    92% {
+        content: 'Designe|';
+    }
+
+    93% {
+        content: 'Designer|';
+    }
+
+    94% {
+        content: 'Designe|';
+    }
+
+    95% {
+        content: 'Design|';
+    }
+
+    96% {
+        content: 'Desig|';
+    }
+
+    97% {
+        content: 'Desi|';
+    }
+
+    98% {
+        content: 'Des|';
+    }
+
+    99% {
+        content: 'De|';
+    }
+
+    100% {
+        content: 'D|';
+    }
+} */
+
+/* end of the home */
+
+/* start  of about */
+
+
+#about .gebresh {
+    font-size: larger;
+    line-height: 2;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+
+}
+
+.about .about-main-image .about-bg-image {
+    background-image: url("/imgs/dots.png");
+    z-index: -1;
+    top: 20px;
+    left: -20px;
+    background-repeat: repeat;
+}
+
+.btn-primary-color {
+    background-color: black;
+    color: white;
+}
+
+.btn-outline-primary-color {
+    border-color: black;
+}
+
+.btn-outline-primary-color:hover {
+    background-color: black;
+    color: white;
+}
+
+/* end of about */
+/* start of service */
+
+
+.bg-gray {
+    background-color: #f4f4f4;
+}
+
+.section-header h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    position: relative;
+}
+
+.section-header h3::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    height: 2px;
+    width: 160px;
+    transform: translateX(-50%);
+    background-image: url(../img/dots.png);
+}
+
+.icon-container {
+    width: 70px;
+    height: 70px;
+    background-color: #f4f4f4;
+    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.item-card:hover .icon-container {
+    background-color: black;
+    color: white;
+}
+
+#services{
+    margin-bottom: 100px;
+}
+
+
+/* end of services */
+
+/* start of portofolio */
+.underline::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    transform: translateX(50%);
+}
+
+.portfolio-card p {
+    position: relative;
+    top: -30px;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.portfolio-card:hover p {
+    top: 0px;
+    opacity: 1;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    opacity: 100%;
+    top: 5px;
+}
+
+.portfolio-overlay {
+    top: 50px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.portfolio-icons-group {
+    transition: 0.3s ease-in-out;
+}
+
+.portfolio-icons-group .icon-inner {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    margin: 0 0.1rem;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.portfolio-icons-group a {
+    text-decoration: none;
+}
+
+.portfolio-icons-group .icon:hover .icon-inner {
+    color: black;
+    background-color: white;
+}
+.mt-6{
+    margin-top: 20px;
+    
+}
+.nav-tabs{
+    border: none;
+    color: black;
+}
+.nav-tabs .nav-link{
+    color: black;
+}
+.nav-tabs .nav-link.active{
+direction: underline;
+}
+
+/* end of prtofolio */
+/* start our team  */
+.team{
+    background-color: #f7f7f7;
+    margin-top: 60px;
+}
+.card-body{
+    color: white;
+    background-color: #5B5B5B;
+}
+.team h2{
+    font-size: 40px;
+    font-weight: 800;
+
+
+}
+.card-title{
+    z-index: 444;
+}
+.card{
+    position: relative;
+}
+.card .socials{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+   
+}
+.card:hover .socials {
+    opacity: 2;
+    background-color: rgba(235, 224, 224, 0.7);
+    z-index: 4444;
+}
+.card .card-img img{
+    transition: all .8s;
+}
+.card{
+    overflow: hidden;
+}
+.card:hover img{
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.3);
+}
+.card .socials i{
+margin: 5px;}
+
+
+.card .socials i:hover {
+    color: white;
+    background-color: #464444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end our team */
+/* start of testomonial */
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #f7f7f7;
+}
+
+.carousel-indicators {
+    margin-bottom: -2rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+}
+.test1{
+    text-align: center;
+}
+/* end of testomonial */
